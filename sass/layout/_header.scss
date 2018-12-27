@@ -3,11 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 4rem;
+  padding: 3rem 4rem;
+  border-bottom: .1rem solid $dark-off-white;
 
   &__heading {
     margin-right: 5rem;
-    color: $grey-dark;
+    color: darken($grey-dark, 20%);
     font-size: 1.8rem;
   }
 }

@@ -13,6 +13,11 @@
     transform: scale(1.1);
   }
 
+  &__item:hover &__icon,
+  &__item--active &__icon {
+    fill: $blue-dark;
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -30,7 +35,6 @@
     }
   }
 
-
   &__item:not(:last-child) {
     margin-right: 4rem;
   }
@@ -39,6 +43,6 @@
     height: 1.8rem;
     width: 1.8rem;
     margin-right: 1rem;
-    fill: currentColor;
+    fill: $icon-color;
   }
 }

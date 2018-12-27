@@ -26,6 +26,7 @@ body {
     border: none;
     background-color: #f7f8f8;
     border-radius: 3px;
+    border: 0.1rem solid #dce0e0;
     padding: 1.8rem 4rem;
     margin-left: -4rem; }
     .search__input:focus {
@@ -52,6 +53,9 @@ body {
   .nav__item--active {
     color: #1d4fc8;
     transform: scale(1.1); }
+  .nav__item:hover .nav__icon,
+  .nav__item--active .nav__icon {
+    fill: #1d4fc8; }
   .nav__link {
     display: flex;
     align-items: center; }
@@ -67,18 +71,18 @@ body {
     height: 1.8rem;
     width: 1.8rem;
     margin-right: 1rem;
-    fill: currentColor; }
+    fill: #afb2b0; }
 
 .notification {
   align-self: center;
-  border: 0.01rem solid #a2a5a3;
+  border: 0.01rem solid #dce0e0;
   padding: 1rem 1.5rem;
   margin-left: 3rem;
   position: relative; }
   .notification__icon {
     height: 1.8rem;
     width: 1.8rem;
-    fill: #686a69; }
+    fill: #afb2b0; }
   .notification__alert {
     height: .8rem;
     width: .8rem;
@@ -93,7 +97,7 @@ body {
   align-items: center;
   margin-left: 1.5rem;
   padding: .4rem 1.5rem;
-  border: 0.01rem solid #a2a5a3; }
+  border: 0.01rem solid #dce0e0; }
   .user-profile__icon {
     height: 3.5rem;
     width: 3.5rem;
@@ -108,13 +112,44 @@ body {
   height: 1.5rem;
   width: 1.5rem; }
 
+.pages {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 1rem;
+  border: 0.1rem solid #dce0e0;
+  background-color: #f7f8f8;
+  color: #686a69; }
+  .pages__title {
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .pages__title--active {
+    color: #1d4fc8;
+    background-color: #e8eefc;
+    border-bottom: 3px solid #1d4fc8; }
+  .pages__title:not(:last-child) {
+    border-right: 0.1rem solid #dce0e0; }
+  .pages__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: currentColor; }
+  .pages__text {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-left: 1rem; }
+
 .header {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 4rem; }
+  padding: 3rem 4rem;
+  border-bottom: 0.1rem solid #dce0e0; }
   .header__heading {
     margin-right: 5rem;
-    color: #686a69;
+    color: #353736;
     font-size: 1.8rem; }
