@@ -70,6 +70,16 @@ body {
     margin-right: 1rem;
     fill: currentColor; }
 
+.notification {
+  align-self: center;
+  border: 0.01rem solid #a2a5a3;
+  padding: 1rem 1.5rem;
+  margin-left: 3rem; }
+  .notification__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: #686a69; }
+
 .header {
   font-size: 1.2rem;
   display: flex;
