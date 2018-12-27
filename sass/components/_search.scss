@@ -1,0 +1,33 @@
+$input-border-radius: 5px;
+
+.search {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+
+  &__input {
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    background-color: $grey-light;
+    border-radius: $input-border-radius;
+    padding: 1.8rem 4rem;
+    margin-left: -2.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: $grey-light;
+    padding-left: 2rem;
+    border-radius: $input-border-radius;
+  }
+
+  &__icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}

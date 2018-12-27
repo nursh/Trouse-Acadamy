@@ -1,0 +1,48 @@
+/*************
+COLORS
+**************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6; }
+
+.search {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center; }
+  .search__input {
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    background-color: #a2a5a3;
+    border-radius: 5px;
+    padding: 1.8rem 4rem;
+    margin-left: -2.5rem; }
+    .search__input:focus {
+      outline: none; }
+  .search__button {
+    border: none;
+    background-color: #a2a5a3;
+    padding-left: 2rem;
+    border-radius: 5px; }
+  .search__icon {
+    width: 1.6rem;
+    height: 1.6rem; }
+
+.header {
+  font-size: 1.2rem;
+  display: flex;
+  padding: 2rem 3rem;
+  background-color: paleturquoise; }
+  .header__heading {
+    margin-right: 5rem; }
