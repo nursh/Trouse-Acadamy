@@ -1,6 +1,7 @@
-$input-border-radius: 5px;
+$input-border-radius: 3px;
 
 .search {
+  align-self: center;
   display: flex;
   flex-direction: row-reverse;
   align-content: center;
@@ -9,7 +10,7 @@ $input-border-radius: 5px;
     font-size: inherit;
     font-family: inherit;
     border: none;
-    background-color: $grey-light;
+    background-color: $off-white;
     border-radius: $input-border-radius;
     padding: 1.8rem 4rem;
     margin-left: -2.5rem;
@@ -17,11 +18,15 @@ $input-border-radius: 5px;
     &:focus {
       outline: none;
     }
+
+    &::webkit-input-placeholder {
+      color: $grey-dark;
+    }
   }
 
   &__button {
     border: none;
-    background-color: $grey-light;
+    background-color: $off-white;
     padding-left: 2rem;
     border-radius: $input-border-radius;
   }

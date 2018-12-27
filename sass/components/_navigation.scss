@@ -1,0 +1,45 @@
+.nav {
+  align-self: center;
+  font-size: 1.4rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    margin-left: 5rem;
+    color: $grey-dark;
+  }
+
+  &__item--active {
+    color: $blue-dark;
+    transform: scale(1.1);
+  }
+
+  &__link {
+    display: flex;
+    align-content: center;
+
+
+    &:visited,
+    &:link {
+      color: currentColor;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: $blue-dark;
+      transform: scale(1.1);
+    }
+  }
+
+
+  &__item:not(:last-child) {
+    margin-right: 4rem;
+  }
+
+  &__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-right: 1rem;
+    fill: currentColor;
+  }
+}

@@ -1,10 +1,12 @@
 .header {
   font-size: 1.2rem;
   display: flex;
+  align-content: center;
   padding: 2rem 3rem;
-  background-color: paleturquoise;
+  // background-color: paleturquoise;
 
   &__heading {
     margin-right: 5rem;
+    align-self: center;
   }
 }

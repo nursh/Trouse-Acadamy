@@ -17,6 +17,7 @@ body {
   line-height: 1.6; }
 
 .search {
+  align-self: center;
   display: flex;
   flex-direction: row-reverse;
   align-content: center; }
@@ -24,25 +25,56 @@ body {
     font-size: inherit;
     font-family: inherit;
     border: none;
-    background-color: #a2a5a3;
-    border-radius: 5px;
+    background-color: #f7f8f8;
+    border-radius: 3px;
     padding: 1.8rem 4rem;
     margin-left: -2.5rem; }
     .search__input:focus {
       outline: none; }
+    .search__input::webkit-input-placeholder {
+      color: #686a69; }
   .search__button {
     border: none;
-    background-color: #a2a5a3;
+    background-color: #f7f8f8;
     padding-left: 2rem;
-    border-radius: 5px; }
+    border-radius: 3px; }
   .search__icon {
     width: 1.6rem;
     height: 1.6rem; }
 
+.nav {
+  align-self: center;
+  font-size: 1.4rem; }
+  .nav__list {
+    list-style: none;
+    display: flex;
+    margin-left: 5rem;
+    color: #686a69; }
+  .nav__item--active {
+    color: #1d4fc8;
+    transform: scale(1.1); }
+  .nav__link {
+    display: flex;
+    align-content: center; }
+    .nav__link:visited, .nav__link:link {
+      color: currentColor;
+      text-decoration: none; }
+    .nav__link:hover {
+      color: #1d4fc8;
+      transform: scale(1.1); }
+  .nav__item:not(:last-child) {
+    margin-right: 4rem; }
+  .nav__icon {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-right: 1rem;
+    fill: currentColor; }
+
 .header {
   font-size: 1.2rem;
   display: flex;
-  padding: 2rem 3rem;
-  background-color: paleturquoise; }
+  align-content: center;
+  padding: 2rem 3rem; }
   .header__heading {
-    margin-right: 5rem; }
+    margin-right: 5rem;
+    align-self: center; }
