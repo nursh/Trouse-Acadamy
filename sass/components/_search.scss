@@ -1,10 +1,9 @@
 $input-border-radius: 3px;
 
 .search {
-  align-self: center;
   display: flex;
   flex-direction: row-reverse;
-  align-content: center;
+  align-items: center;
 
   &__input {
     font-size: inherit;
@@ -13,7 +12,7 @@ $input-border-radius: 3px;
     background-color: $off-white;
     border-radius: $input-border-radius;
     padding: 1.8rem 4rem;
-    margin-left: -2.5rem;
+    margin-left: -4rem;
 
     &:focus {
       outline: none;
@@ -27,12 +26,13 @@ $input-border-radius: 3px;
   &__button {
     border: none;
     background-color: $off-white;
-    padding-left: 2rem;
+    padding:0 1rem;
     border-radius: $input-border-radius;
   }
 
   &__icon {
     width: 1.6rem;
     height: 1.6rem;
+    fill: $grey-light;
   }
 }

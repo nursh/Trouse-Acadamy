@@ -1,12 +1,13 @@
 .header {
   font-size: 1.2rem;
   display: flex;
-  align-content: center;
-  padding: 2rem 3rem;
-  // background-color: paleturquoise;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem;
 
   &__heading {
     margin-right: 5rem;
-    align-self: center;
+    color: $grey-dark;
+    font-size: 1.8rem;
   }
 }

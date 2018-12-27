@@ -17,10 +17,9 @@ body {
   line-height: 1.6; }
 
 .search {
-  align-self: center;
   display: flex;
   flex-direction: row-reverse;
-  align-content: center; }
+  align-items: center; }
   .search__input {
     font-size: inherit;
     font-family: inherit;
@@ -28,7 +27,7 @@ body {
     background-color: #f7f8f8;
     border-radius: 3px;
     padding: 1.8rem 4rem;
-    margin-left: -2.5rem; }
+    margin-left: -4rem; }
     .search__input:focus {
       outline: none; }
     .search__input::webkit-input-placeholder {
@@ -36,14 +35,14 @@ body {
   .search__button {
     border: none;
     background-color: #f7f8f8;
-    padding-left: 2rem;
+    padding: 0 1rem;
     border-radius: 3px; }
   .search__icon {
     width: 1.6rem;
-    height: 1.6rem; }
+    height: 1.6rem;
+    fill: #a2a5a3; }
 
 .nav {
-  align-self: center;
   font-size: 1.4rem; }
   .nav__list {
     list-style: none;
@@ -55,7 +54,7 @@ body {
     transform: scale(1.1); }
   .nav__link {
     display: flex;
-    align-content: center; }
+    align-items: center; }
     .nav__link:visited, .nav__link:link {
       color: currentColor;
       text-decoration: none; }
@@ -74,17 +73,48 @@ body {
   align-self: center;
   border: 0.01rem solid #a2a5a3;
   padding: 1rem 1.5rem;
-  margin-left: 3rem; }
+  margin-left: 3rem;
+  position: relative; }
   .notification__icon {
     height: 1.8rem;
     width: 1.8rem;
     fill: #686a69; }
+  .notification__alert {
+    height: .8rem;
+    width: .8rem;
+    border-radius: 100%;
+    background-color: #1d4fc8;
+    position: absolute;
+    top: 1rem;
+    right: 1.6rem; }
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+  padding: .4rem 1.5rem;
+  border: 0.01rem solid #a2a5a3; }
+  .user-profile__icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #a2bbdb;
+    border-radius: 100%;
+    border: 0.2rem solid #a2a5a3; }
+  .user-profile__username {
+    margin-left: 1.5rem;
+    margin-right: .3rem; }
+
+.dropdown {
+  height: 1.5rem;
+  width: 1.5rem; }
 
 .header {
   font-size: 1.2rem;
   display: flex;
-  align-content: center;
-  padding: 2rem 3rem; }
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem; }
   .header__heading {
     margin-right: 5rem;
-    align-self: center; }
+    color: #686a69;
+    font-size: 1.8rem; }
