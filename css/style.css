@@ -4,9 +4,18 @@ COLORS
 .small-heading {
   font-size: 1.4rem;
   color: #1d4fc8;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 600; }
   .small-heading--gray {
     color: #686a69; }
+
+.tiny-heading {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black; }
+  .tiny-heading--light {
+    color: #a2a5a3; }
 
 *,
 *::before,
@@ -225,8 +234,81 @@ main {
     border-radius: 100%;
     background-color: #3668e2; }
 
-.content {
-  background-color: palevioletred; }
+.content__title {
+  color: #1d4fc8;
+  font-size: 2.4rem;
+  font-weight: 400; }
+
+.progress {
+  margin-top: 1.5rem; }
+  .progress__bar {
+    height: .5rem;
+    width: 85%;
+    margin-top: 1rem;
+    background-color: #d6d7d6;
+    position: relative; }
+  .progress__bar::before {
+    content: "";
+    background-color: #ff7733;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%; }
+
+.info {
+  margin-top: 2rem;
+  border: 0.1rem solid #dce0e0;
+  padding: 1.5rem 0;
+  border-radius: .5rem;
+  display: flex;
+  background-color: #f7f8f8; }
+  .info-item {
+    flex: 1;
+    display: grid;
+    justify-content: center; }
+  .info-item:not(:last-child) {
+    border-right: 0.1rem solid #dce0e0; }
+  .info__text {
+    font-size: 1.5rem; }
+    .info__text--pink {
+      color: #f0447a; }
+
+.divider {
+  border: 0.1rem solid #dce0e0;
+  margin: 3rem 0; }
+
+.overview {
+  width: 90%;
+  font-size: 1.2rem; }
+  .overview__text {
+    margin-top: 1rem; }
+
+.task-title {
+  margin-top: 4rem;
+  display: flex; }
+  .task-title__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.3rem solid #dce0e0;
+    cursor: pointer; }
+  .task-title--active .small-heading,
+  .task-title__item:hover .small-heading {
+    color: #1d4fc8; }
+  .task-title--active, .task-title__item:hover {
+    border-color: #1d4fc8; }
+  .task-title__number {
+    font-size: 1.4rem;
+    color: #f7f8f8;
+    background-color: #f0447a;
+    padding: .2rem .8rem;
+    border-radius: .3rem;
+    display: inline-block;
+    margin-left: 1rem; }
 
 .header {
   font-size: 1.2rem;

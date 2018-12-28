@@ -1,3 +1,109 @@
 .content {
-  background-color: palevioletred;
+
+  &__title {
+    color: $blue-dark;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+}
+
+.progress {
+  margin-top: 1.5rem;
+
+
+  &__bar {
+    height: .5rem;
+    width: 85%;
+    margin-top: 1rem;
+    background-color: lighten($grey-light, 20%);
+    position: relative;
+  }
+
+  &__bar::before {
+    content: "";
+    background-color: $orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%;
+  }
+
+
+}
+
+.info {
+  margin-top: 2rem;
+  border: $thin-border;
+  padding: 1.5rem 0;
+  border-radius: .5rem;
+  display: flex;
+  background-color: $off-white;
+
+  &-item {
+    flex: 1;
+    display: grid;
+    justify-content: center;
+  }
+
+  &-item:not(:last-child) {
+    border-right: $thin-border;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+
+    &--pink {
+      color: $pink;
+    }
+  }
+}
+
+.divider {
+  border: $thin-border;
+  margin: 3rem 0;
+}
+
+.overview {
+  width: 90%;
+  font-size: 1.2rem;
+
+  &__text {
+    margin-top: 1rem;
+  }
+}
+
+.task-title {
+  margin-top: 4rem;
+  display: flex;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+    border-bottom: .3rem solid $dark-off-white;
+    cursor: pointer;
+  }
+
+  &--active .small-heading,
+  &__item:hover .small-heading {
+    color: $blue-dark;
+  }
+
+  &--active, &__item:hover {
+    border-color: $blue-dark;
+  }
+
+  &__number {
+    font-size: 1.4rem;
+    color: $off-white;
+    background-color: $pink;
+    padding: .2rem .8rem;
+    border-radius: .3rem;
+    display: inline-block;
+    margin-left: 1rem;
+  }
 }
