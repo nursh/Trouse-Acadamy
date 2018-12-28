@@ -1,0 +1,10 @@
+.small-heading {
+  font-size: 1.4rem;
+  color: $blue-dark;
+  text-transform: uppercase;
+
+  &--gray {
+    color: $grey-dark;
+  }
+}
+
