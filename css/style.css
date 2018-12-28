@@ -239,22 +239,15 @@ main {
   font-size: 2.4rem;
   font-weight: 400; }
 
-.progress {
-  margin-top: 1.5rem; }
-  .progress__bar {
-    height: .5rem;
-    width: 85%;
-    margin-top: 1rem;
-    background-color: #d6d7d6;
-    position: relative; }
-  .progress__bar::before {
-    content: "";
-    background-color: #ff7733;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 45%; }
+.divider {
+  border: 0.1rem solid #dce0e0;
+  margin: 3rem 0; }
+
+.overview {
+  width: 90%;
+  font-size: 1.2rem; }
+  .overview__text {
+    margin-top: 1rem; }
 
 .info {
   margin-top: 2rem;
@@ -274,15 +267,22 @@ main {
     .info__text--pink {
       color: #f0447a; }
 
-.divider {
-  border: 0.1rem solid #dce0e0;
-  margin: 3rem 0; }
-
-.overview {
-  width: 90%;
-  font-size: 1.2rem; }
-  .overview__text {
-    margin-top: 1rem; }
+.progress {
+  margin-top: 1.5rem; }
+  .progress__bar {
+    height: .5rem;
+    width: 85%;
+    margin-top: 1rem;
+    background-color: #d6d7d6;
+    position: relative; }
+  .progress__bar::before {
+    content: "";
+    background-color: #ff7733;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%; }
 
 .task-title {
   margin-top: 4rem;

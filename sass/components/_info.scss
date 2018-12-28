@@ -1,0 +1,26 @@
+.info {
+  margin-top: 2rem;
+  border: $thin-border;
+  padding: 1.5rem 0;
+  border-radius: .5rem;
+  display: flex;
+  background-color: $off-white;
+
+  &-item {
+    flex: 1;
+    display: grid;
+    justify-content: center;
+  }
+
+  &-item:not(:last-child) {
+    border-right: $thin-border;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+
+    &--pink {
+      color: $pink;
+    }
+  }
+}

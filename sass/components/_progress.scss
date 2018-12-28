@@ -1,0 +1,22 @@
+.progress {
+  margin-top: 1.5rem;
+
+
+  &__bar {
+    height: .5rem;
+    width: 85%;
+    margin-top: 1rem;
+    background-color: lighten($grey-light, 20%);
+    position: relative;
+  }
+
+  &__bar::before {
+    content: "";
+    background-color: $orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%;
+  }
+}
