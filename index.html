@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -17,10 +17,10 @@
       <form action="#" class="search">
         <input type="text" class="search__input" placeholder="Search..." />
         <button class="search__button">
-            <svg class="search__icon">
-              <use xlink:href="img/sprite.svg#icon-search"></use>
-            </svg>
-          </button>
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
       </form>
 
       <nav class="nav">
@@ -28,7 +28,7 @@
           <li class="nav__item nav__item--active">
             <a href="#" class="nav__link">
               <svg class="nav__icon">
-                <use xlink:href="img/sprite.svg#icon-home3" ></use>
+                <use xlink:href="img/sprite.svg#icon-home3"></use>
               </svg>
               <span>Home</span>
             </a>
@@ -39,7 +39,7 @@
                 <use xlink:href="img/sprite.svg#icon-books"></use>
               </svg>
               <span>Courses</span>
-            </a>          
+            </a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link">
@@ -55,7 +55,7 @@
                 <use xlink:href="img/sprite.svg#icon-envelop"></use>
               </svg>
               <span>Contact</span>
-            </a>         
+            </a>
           </li>
         </ul>
       </nav>
@@ -119,7 +119,9 @@
               <p class="info__text">Course</p>
             </div>
             <div class="info-item">
-              <h5 class="tiny-heading tiny-heading--light">Course Start date</h5>
+              <h5 class="tiny-heading tiny-heading--light">
+                Course Start date
+              </h5>
               <p class="info__text">05 Dec 2018</p>
             </div>
             <div class="info-item">
@@ -136,12 +138,15 @@
 
           <div class="overview">
             <h4 class="tiny-heading tiny-heading--light">Task Overview</h4>
-            <p class="overview__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Vero atque veritatis quidem deleniti iure aperiam, dolor rerum ipsam,
-              sed qui consequuntur saepe voluptas cumque cupiditate porro,
-              eos labore at officia.Architecto quaerat ipsa aut,
-              rerum repellendus impedit unde quia dolorem qui, 
-              doloribus vel doloremque at laudantium nisi quibusdam dolore iste optio cupiditate ad iure accusamus? Doloribus non culpa a dolorem.</p>
+            <p class="overview__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              atque veritatis quidem deleniti iure aperiam, dolor rerum ipsam,
+              sed qui consequuntur saepe voluptas cumque cupiditate porro, eos
+              labore at officia.Architecto quaerat ipsa aut, rerum repellendus
+              impedit unde quia dolorem qui, doloribus vel doloremque at
+              laudantium nisi quibusdam dolore iste optio cupiditate ad iure
+              accusamus? Doloribus non culpa a dolorem.
+            </p>
           </div>
 
           <div class="task-title">
@@ -153,6 +158,70 @@
               <h4 class="small-heading small-heading--gray">Completed Tasks</h4>
             </div>
           </div>
+
+          <div class="tasks">
+            <div class="task">
+              <h4 class="tiny-heading">Today's Task</h4>
+              <div class="task-card task-card--active">
+                <h3 class="task-card__title">1. &nbsp;Pass coding quiz</h3>
+                <p class="overview__text overview__text--light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  dolor in illum maxime dolorum deleniti vitae magni ea.
+                  Repellat ipsam porro facilis ipsa optio eum. Repellat id
+                  mollitia voluptate.
+                </p>
+                <div class="task__info">
+                  <div class="task__buttons">
+                    <a href="#" class="task__button">
+                      <svg class="task__button__icon">
+                        <use xlink:href="img/sprite.svg#icon-new-message"></use>
+                      </svg>
+                      <span>Prepare Quiz</span>
+                    </a>
+                    <a href="#" class="task__button task__button--active"
+                      >Start Quiz</a
+                    >
+                  </div>
+
+                  <div class="task-deadline">
+                    <div class="tiny-heading tiny-heading--light tiny-heading--right">Deadline</div>
+                    <div class="tiny-heading tiny-heading--date tiny-heading--right">Today</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="task">
+              <h4 class="tiny-heading">Upcoming Task</h4>
+              <div class="task-card">
+                <h3 class="task-card__title">2. &nbsp;Pass coding quiz</h3>
+                <p class="overview__text overview__text--light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  dolor in illum maxime dolorum deleniti vitae magni ea.
+                  Repellat ipsam porro facilis ipsa optio eum. Repellat id
+                  mollitia voluptate.
+                </p>
+                <div class="task__info">
+                  <div class="task__buttons">
+                    <a href="#" class="task__button">
+                      <svg class="task__button__icon">
+                        <use xlink:href="img/sprite.svg#icon-new-message"></use>
+                      </svg>
+                      <span>Prepare Quiz</span>
+                    </a>
+                    <a href="#" class="task__button">
+                      Start Quiz
+                    </a>
+                  </div>
+
+                  <div class="task-deadline">
+                    <div class="tiny-heading tiny-heading--light tiny-heading--right">Deadline</div>
+                    <div class="tiny-heading tiny-heading--date tiny-heading--right">09 Nov 2019</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="sidebar">
@@ -161,9 +230,21 @@
             <div class="sidebar__achievement__badges">
               <h4 class="sidebar__title">Badges collected</h4>
               <div class="sidebar__achievement__badges-icons">
-                <img src="img/blue-team.svg" alt="Blue team" class="sidebar__achievement__badges-icon">
-                <img src="img/crown.svg" alt="Crown badge" class="sidebar__achievement__badges-icon">
-                <img src="img/star-1.svg" alt="Star badge" class="sidebar__achievement__badges-icon">
+                <img
+                  src="img/blue-team.svg"
+                  alt="Blue team"
+                  class="sidebar__achievement__badges-icon"
+                />
+                <img
+                  src="img/crown.svg"
+                  alt="Crown badge"
+                  class="sidebar__achievement__badges-icon"
+                />
+                <img
+                  src="img/star-1.svg"
+                  alt="Star badge"
+                  class="sidebar__achievement__badges-icon"
+                />
               </div>
             </div>
             <div class="sidebar__achievement__section">

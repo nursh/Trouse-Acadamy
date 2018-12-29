@@ -2,7 +2,7 @@
   font-size: 1.4rem;
   color: $blue-dark;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
 
   &--gray {
     color: $grey-dark;
@@ -13,9 +13,28 @@
 .tiny-heading {
   font-size: 1.1rem;
   text-transform: uppercase;
-  font-weight: 600;
-  color: darken($grey-dark, 50%);
+  font-weight: 700;
+  color: $dark-text-color;
 
+  &--light {
+    color: $grey-light;
+  }
+
+  &--date {
+    color: $blue-dark;
+    text-transform: capitalize;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}
+
+.overview__text {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  
   &--light {
     color: $grey-light;
   }

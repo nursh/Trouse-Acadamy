@@ -1,0 +1,71 @@
+.tasks {
+  margin: 2rem 0;
+}
+
+.task-card {
+  margin: 2rem 0;
+  padding: 2rem;
+  border: .2rem solid $dark-off-white;
+
+  &__title {
+    font-size: 1.5rem;
+    color: $dark-text-color;
+  }
+
+  &--active {
+    border-color: $blue-dark;
+  }
+
+  &:hover {
+    border-color: $blue-dark;
+  }
+}
+
+.task {
+
+  &__info {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $grey-dark;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    border: $thin-border;
+    border-radius: .3rem;
+    text-decoration: none;
+    font-weight: 700;
+
+    &__icon {
+      height: 1.5rem;
+      width: 1.5rem;
+      fill: $grey-light;
+      margin-right: 1.5rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover,
+    &--active {
+      color: #fff;
+      background-color: $blue-dark;
+    }
+
+    &:hover &__icon {
+      fill: #fff;
+    }
+  }
+
+}

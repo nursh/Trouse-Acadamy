@@ -2,6 +2,8 @@
 
   &__text {
     font-size: 3rem;
+    color: $dark-text-color;
+    font-weight: 600;
   }
 
   &__text--pink {
@@ -11,23 +13,18 @@
   &__title {
     font-size: 1.3rem;
     color: $grey-dark;
+    font-weight: 700;
   }
 
   &__heading {
-
     padding: 1.5rem 2rem;
     border-bottom: $thin-border;
   }
 
   &__subheading {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.2rem;
     color: $grey-light;
-  }
-
-  &__title,
-  &__heading {
-    font-weight: 400;
   }
 
   & > * {
@@ -61,6 +58,7 @@
     & span {
       display: inline-block;
       padding-left: 2rem;
+      font-weight: 600;
     }
   }
 
